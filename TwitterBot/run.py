@@ -5,17 +5,23 @@ from keys import *
 from replyMentions import reply_to_tweets
 from post import createTweet
 import random
+import sys
+import argparse
 
 def start(amount, randNum, days):
-    if(randNum):
+    print("inside start")
+    if(randNum == 1):
+        print("random post")
         for x in range(days):
             randPost(amount)
     else:
+        print("even post")
         for x in range(days):
             even(amount)
         
 def even(amount):
-    sleep(86400/amount)
+    print(86400/amount)
+    time.sleep(86400/amount)
     actions()
         
 #Post and reply to tweets at random times during day
@@ -26,11 +32,10 @@ def randPost(amount):
     
     for x in range(amount):
         arr.append(random.randint(0,86400))
-        
+
     arr.sort()
-    
+    print(arr)
     start_time = time.time()
-    
     time.sleep(arr[0])
     actions()
     
@@ -47,7 +52,22 @@ def actions():
     createTweet()
     reply_to_tweets()
         
-        
-        
+def checkInt(num):
+    try:
+        int(num)
+        return True
+    except ValueError:
+        return False
+
+print(str(sys.argv))
+    
+for arg in sys.argv[1:]:
+    if not checkInt(arg):
+        sys.exit("All arguments must be integers. Exit")
+    
+if(int(sys.argv[2]) == 0 or int(sys.argv[2]) == 1): 
+    start(int(sys.argv[1]),int(sys.argv[2]),int(sys.argv[3]))
+else:
+    sys.exit("Arg2 must be either 1 or 0 (true or false)")
 
         
