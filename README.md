@@ -1,5 +1,4 @@
 # Twitter Bot
-
 Twitter Bot is a bot that can post and reply to mentions on twitter.
 It uses [ChatterBot](https://github.com/gunthercox/ChatterBot) for replying and [tweepy](https://github.com/tweepy/tweepy) for connecting to twitter.
 
@@ -20,9 +19,9 @@ It uses [ChatterBot](https://github.com/gunthercox/ChatterBot) for replying and 
 ### Developer Account
 Make a developer twitter account if you do have one already then skip this step 
 
-* Go to the [twitter dev website](https://developer.twitter.com/en/apps)
-* Sign into the account that you want to make your bot on
-* Open apps on the top right corner under the drop down of your name
+* Go to the [twitter developer website](https://developer.twitter.com/en/apps)
+* Sign onto the account that you want to make your bot on
+* Open apps on the top right corner under the drop-down of your name
 * Create an app
 * Fill out the information and then submit
 * Open Keys and Tokens
@@ -30,13 +29,18 @@ Make a developer twitter account if you do have one already then skip this step
 ### Configure TwitterBot
 #### Twitter Python Scripts
 * Open Keys and Tokens from the developer account
-* Go to keys.py and input Keys and Tokens
+* Go to keys.py in the TwitterBot folder
+* Copy Keys and Tokens into Keys.py
+	* API Key -> CONSUMER_KEY
+	* API secret key -> CONSUMER_SECRET
+	* Access token -> ACCESS_KEY
+	* Access token secret -> ACCESS_SECRET
 
 #### ChatterBot Python Scripts
 
 
 ### Run.py
-Run.py uses command line arguments so when running input the following parameters in the exact order
+Run.py uses command-line arguments so when running input the following parameters in the exact order
 
 * Input parameters
 	* Amount of Tweets per day
