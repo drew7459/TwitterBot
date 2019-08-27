@@ -28,11 +28,11 @@ Make a developer twitter account if you do have one already then skip this step
 * Open Keys and Tokens
 
 ### Configure TwitterBot
-####Twitter Python Scripts
+#### Twitter Python Scripts
 * Open Keys and Tokens from the developer account
 * Go to keys.py and input Keys and Tokens
 
-####ChatterBot Python Scripts
+#### ChatterBot Python Scripts
 
 
 ### Run.py
