@@ -42,9 +42,6 @@ Make a developer twitter account if you do have one already then skip this step
 ### Run.py
 Run.py uses command-line arguments so when running input the following parameters in the exact order
 
-## License
-None, do whatever you want
-
 * Input parameters
 	* Amount of Tweets per day
 	* Binary true or false for random times
@@ -53,3 +50,6 @@ None, do whatever you want
 Sample Input for 3 tweets, at random times, for 2 days.
          
         python run.py 3 1 2
+
+## License
+None, do whatever you want
