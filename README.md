@@ -36,9 +36,6 @@ Make a developer twitter account if you do have one already then skip this step
 	* Access token -> ACCESS_KEY
 	* Access token secret -> ACCESS_SECRET
 
-#### ChatterBot Python Scripts
-
-
 ### Run.py
 Run.py uses command-line arguments so when running input the following parameters in the exact order
 
